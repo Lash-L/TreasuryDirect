@@ -1,0 +1,21 @@
+[project]
+name = "treasurydirect"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.12.13",
+    "mitmproxy>=11.0.2",
+    "beautifulsoup4>=4.13.4",
+    "google-genai>=1.24.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.12.1",
+]
