@@ -88,6 +88,8 @@ class MitmAgent:
         :param search_str: The string you want to look for
         :return: A list of all flows that contain this string.
         """
+        # A good system here would be to summarize search results in regards to what the user is wanting. This would limit
+        # the context size.
         print(f"Finding string: {search_str}")
         results = []
         for flow in self._flow_data:
